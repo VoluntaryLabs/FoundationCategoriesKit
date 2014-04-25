@@ -1,5 +1,5 @@
 //
-//  NSString+BM.h
+//  NSString+extra.h
 //  Bitmarket
 //
 //  Created by Steve Dekorte on 1/25/14.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (base64)
+@interface NSString (extra)
 
 - (NSString *)encodedBase64;
 - (NSString *)decodedBase64;
@@ -30,5 +30,6 @@
 
 - (NSString *)before:(NSString *)aString;
 - (NSString *)after:(NSString *)aString;
+
 
 @end

@@ -14,4 +14,4 @@
 #import "NSFileManager+DirectoryLocations.h"
 #import "NSMutableAttributedString+extra.h"
 #import "NSObject+extra.h"
-#import "NSString+BM.h"
+#import "NSString+extra.h"

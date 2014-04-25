@@ -24,8 +24,8 @@
 		AAE31ECF18FF1E7100405754 /* NSMutableAttributedString+extra.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE31EC318FF1E7100405754 /* NSMutableAttributedString+extra.m */; };
 		AAE31ED018FF1E7100405754 /* NSObject+extra.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE31EC418FF1E7100405754 /* NSObject+extra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AAE31ED118FF1E7100405754 /* NSObject+extra.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE31EC518FF1E7100405754 /* NSObject+extra.m */; };
-		AAE31ED218FF1E7100405754 /* NSString+BM.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE31EC618FF1E7100405754 /* NSString+BM.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AAE31ED318FF1E7100405754 /* NSString+BM.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE31EC718FF1E7100405754 /* NSString+BM.m */; };
+		AAE31ED218FF1E7100405754 /* NSString+extra.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE31EC618FF1E7100405754 /* NSString+extra.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAE31ED318FF1E7100405754 /* NSString+extra.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE31EC718FF1E7100405754 /* NSString+extra.m */; };
 		AAE31EDD18FF1F9A00405754 /* FoundationCategoriesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE31E9D18FF1E3F00405754 /* FoundationCategoriesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -64,8 +64,8 @@
 		AAE31EC318FF1E7100405754 /* NSMutableAttributedString+extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+extra.m"; sourceTree = "<group>"; };
 		AAE31EC418FF1E7100405754 /* NSObject+extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+extra.h"; sourceTree = "<group>"; };
 		AAE31EC518FF1E7100405754 /* NSObject+extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+extra.m"; sourceTree = "<group>"; };
-		AAE31EC618FF1E7100405754 /* NSString+BM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BM.h"; sourceTree = "<group>"; };
-		AAE31EC718FF1E7100405754 /* NSString+BM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BM.m"; sourceTree = "<group>"; };
+		AAE31EC618FF1E7100405754 /* NSString+extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+extra.h"; sourceTree = "<group>"; };
+		AAE31EC718FF1E7100405754 /* NSString+extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+extra.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,8 +180,8 @@
 				AAE31EC318FF1E7100405754 /* NSMutableAttributedString+extra.m */,
 				AAE31EC418FF1E7100405754 /* NSObject+extra.h */,
 				AAE31EC518FF1E7100405754 /* NSObject+extra.m */,
-				AAE31EC618FF1E7100405754 /* NSString+BM.h */,
-				AAE31EC718FF1E7100405754 /* NSString+BM.m */,
+				AAE31EC618FF1E7100405754 /* NSString+extra.h */,
+				AAE31EC718FF1E7100405754 /* NSString+extra.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -194,7 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAE31ECE18FF1E7100405754 /* NSMutableAttributedString+extra.h in Headers */,
-				AAE31ED218FF1E7100405754 /* NSString+BM.h in Headers */,
+				AAE31ED218FF1E7100405754 /* NSString+extra.h in Headers */,
 				AAE31EC818FF1E7100405754 /* NSArray+extra.h in Headers */,
 				AAE31ECC18FF1E7100405754 /* NSFileManager+DirectoryLocations.h in Headers */,
 				AAE31ED018FF1E7100405754 /* NSObject+extra.h in Headers */,
@@ -302,7 +302,7 @@
 				AAE31ED118FF1E7100405754 /* NSObject+extra.m in Sources */,
 				AAE31ECB18FF1E7100405754 /* NSDictionary+json.m in Sources */,
 				AAE31ECF18FF1E7100405754 /* NSMutableAttributedString+extra.m in Sources */,
-				AAE31ED318FF1E7100405754 /* NSString+BM.m in Sources */,
+				AAE31ED318FF1E7100405754 /* NSString+extra.m in Sources */,
 				AAE31EC918FF1E7100405754 /* NSArray+extra.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

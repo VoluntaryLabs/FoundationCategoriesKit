@@ -7,7 +7,7 @@
 //
 
 #import "NSMutableAttributedString+extra.h"
-#import "NSString+BM.h"
+#import "NSString+extra.h"
 
 @implementation NSMutableAttributedString (extra)
 

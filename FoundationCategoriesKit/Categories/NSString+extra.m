@@ -1,14 +1,14 @@
 //
-//  NSString+extras.m
+//  NSString+extra.m
 //  Bitmarket
 //
 //  Created by Steve Dekorte on 1/25/14.
 //  Copyright (c) 2014 Bitmarkets.org. All rights reserved.
 //
 
-#import "NSString+BM.h"
+#import "NSString+extra.h"
 
-@implementation NSString (base64)
+@implementation NSString (extra)
 
 - (NSString *)encodedBase64
 {
