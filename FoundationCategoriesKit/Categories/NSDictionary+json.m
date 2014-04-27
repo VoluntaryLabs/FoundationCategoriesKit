@@ -42,6 +42,8 @@
 
 - (NSString *)asJsonString
 {
+    //NSLog(@"dict '%@'", self.description);
+    
     NSError *error;
     NSData *data = [NSJSONSerialization dataWithJSONObject:self
                                                    options:NSJSONWritingPrettyPrinted
