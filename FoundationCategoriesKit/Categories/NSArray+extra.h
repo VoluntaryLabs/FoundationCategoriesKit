@@ -19,6 +19,7 @@
 
 - (void)reverse;
 - (void)mergeWith:(NSArray *)otherArray;
+- (id)removeFirstObject;
 
 
 @end

@@ -88,4 +88,17 @@
     [self addObjectsFromArray:[selfSet allObjects]];
 }
 
+- (id)removeFirstObject
+{
+    if (self.count > 0)
+    {
+        id firstObject = self.firstObject;
+        [self removeObjectAtIndex:0.0];
+        return firstObject;
+    }
+    
+    return nil;
+}
+
+
 @end
