@@ -208,5 +208,23 @@
     return after;
 }
 
+- (NSString *)sansPrefix:(NSString *)aPrefix
+{
+    NSRange range = [self rangeOfString:aPrefix options:NSLiteralSearch];
+    
+    if (range.location != NSNotFound && range.location == 0)
+    {
+        return [self after:aPrefix];
+    }
+    
+    return self;
+}
+
+- (NSString *)withPrefix:(NSString *)aString
+{
+    return [aString stringByAppendingString:self];
+}
+
+
 @end
 

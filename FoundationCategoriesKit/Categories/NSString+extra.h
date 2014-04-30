@@ -31,5 +31,7 @@
 - (NSString *)before:(NSString *)aString;
 - (NSString *)after:(NSString *)aString;
 
+- (NSString *)sansPrefix:(NSString *)aString;
+- (NSString *)withPrefix:(NSString *)aString;
 
 @end
