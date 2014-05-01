@@ -12,7 +12,7 @@
 
 + (NSMutableDictionary *)dictionaryWithJsonString:(NSString *)aString
 {
-    NSLog(@"market message string '%@'", aString);
+    //NSLog(@"market message string '%@'", aString);
     
     NSData *jsonData = [aString dataUsingEncoding:NSUTF8StringEncoding];
     NSError *error;
@@ -24,7 +24,7 @@
     
     if (error)
     {
-        NSLog(@"JSON Parse Error: %@", [[error userInfo] objectForKey:@"NSDebugDescription"]);
+        //NSLog(@"JSON Parse Error: %@", [[error userInfo] objectForKey:@"NSDebugDescription"]);
         return nil;
     }
     
