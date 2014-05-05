@@ -34,4 +34,6 @@
 - (NSString *)sansPrefix:(NSString *)aString;
 - (NSString *)withPrefix:(NSString *)aString;
 
+- (NSString *)capitalisedFirstCharacterString;
+
 @end

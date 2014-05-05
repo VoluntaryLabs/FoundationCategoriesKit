@@ -13,6 +13,8 @@
 - (NSArray *)reversedArray;
 - (NSArray *)sortedStrings;
 
+- (id)firstObjectOfClass:(Class)aClass;
+
 @end
 
 @interface NSMutableArray (extra)

@@ -25,6 +25,19 @@
     return [self sortedArrayUsingSelector:@selector(compare:)];
 }
 
+- (id)firstObjectOfClass:(Class)aClass
+{
+    for (NSObject *obj in self)
+    {
+        if ([obj isKindOfClass:aClass])
+        {
+            return obj;
+        }
+    }
+    
+    return nil;
+}
+
 @end
 
 

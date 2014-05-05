@@ -226,5 +226,19 @@
 }
 
 
+- (NSString *)capitalisedFirstCharacterString
+{
+    // slow
+    
+    if (self && [self length] > 0)
+    {
+        NSString *firstChar = [[self substringToIndex:1] capitalizedString];
+        return  [self stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:firstChar];
+    }
+    
+    return self;
+}
+
+
 @end
 
