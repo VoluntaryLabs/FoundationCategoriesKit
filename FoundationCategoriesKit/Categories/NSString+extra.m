@@ -8,8 +8,26 @@
 
 #import "NSString+extra.h"
 
+
+@implementation NSData (extra)
+
+- (NSString *)encodedBase64String
+{
+    return [self base64EncodedStringWithOptions:0];
+}
+
+
+@end
+
+
 @implementation NSString (extra)
 
+/*
+- (NSData *)encodedBase64Data
+{
+    return [self dataUsingEncoding:NSUTF8StringEncoding];
+}
+*/
 - (NSString *)encodedBase64
 {
     NSData *plainData = [self dataUsingEncoding:NSUTF8StringEncoding];

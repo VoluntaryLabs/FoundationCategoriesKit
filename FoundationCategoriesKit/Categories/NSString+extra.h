@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@interface NSData (extra)
+
+- (NSString *)encodedBase64String;
+
+@end
+
+
 @interface NSString (extra)
 
 - (NSString *)encodedBase64;
