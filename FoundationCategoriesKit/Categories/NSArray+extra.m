@@ -38,6 +38,38 @@
     return nil;
 }
 
+- (id)objectAfter:(id)anObject
+{
+    NSInteger index = [self indexOfObject:anObject];
+    
+    if (index != -1)
+    {
+        NSInteger nextIndex = index + 1;
+        
+        if (nextIndex < [self count])
+        {
+            return [self objectAtIndex:nextIndex];
+        }
+    }
+    
+    return nil;
+}
+
+- (id)objectBefore:(id)anObject
+{
+    id lastObject = nil;
+    
+    for (NSObject *obj in self)
+    {
+        if (obj == anObject)
+        {
+            return lastObject;
+        }
+    }
+    
+    return nil;
+}
+
 @end
 
 

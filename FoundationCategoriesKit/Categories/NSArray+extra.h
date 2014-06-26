@@ -15,6 +15,9 @@
 
 - (id)firstObjectOfClass:(Class)aClass;
 
+- (id)objectAfter:(id)anObject;
+- (id)objectBefore:(id)anObject;
+
 @end
 
 @interface NSMutableArray (extra)
