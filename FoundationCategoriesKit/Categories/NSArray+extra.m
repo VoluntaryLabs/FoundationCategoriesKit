@@ -80,7 +80,14 @@
         [results addObject:result];
     }
     
-    return results;
+    return [NSArray arrayWithArray:results];
+}
+
+- (NSArray *)sansFirstObject
+{
+    NSMutableArray *results = [NSMutableArray arrayWithArray:self];
+    [results removeFirstObject];
+    return [NSArray arrayWithArray:results];
 }
 
 @end

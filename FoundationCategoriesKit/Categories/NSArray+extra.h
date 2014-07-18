@@ -20,6 +20,8 @@
 
 - (NSArray *)map:(SEL)aSelector;
 
+- (NSArray *)sansFirstObject;
+
 @end
 
 @interface NSMutableArray (extra)
