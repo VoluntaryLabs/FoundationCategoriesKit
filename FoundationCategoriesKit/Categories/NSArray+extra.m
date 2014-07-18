@@ -70,6 +70,19 @@
     return nil;
 }
 
+- (NSArray *)map:(SEL)aSelector
+{
+    NSMutableArray *results = [NSMutableArray array];
+    
+    for (NSObject *obj in self)
+    {
+        id result = [obj performSelector:aSelector];
+        [results addObject:result];
+    }
+    
+    return results;
+}
+
 @end
 
 

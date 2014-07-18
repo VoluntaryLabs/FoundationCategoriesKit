@@ -18,6 +18,8 @@
 - (id)objectAfter:(id)anObject;
 - (id)objectBefore:(id)anObject;
 
+- (NSArray *)map:(SEL)aSelector;
+
 @end
 
 @interface NSMutableArray (extra)
