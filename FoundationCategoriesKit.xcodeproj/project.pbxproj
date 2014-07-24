@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA38C1681981A7E2003CDA68 /* NSNumber+extra.h in Headers */ = {isa = PBXBuildFile; fileRef = AA38C1661981A7E2003CDA68 /* NSNumber+extra.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA38C1691981A7E2003CDA68 /* NSNumber+extra.m in Sources */ = {isa = PBXBuildFile; fileRef = AA38C1671981A7E2003CDA68 /* NSNumber+extra.m */; };
 		AAE31E9118FF1E3F00405754 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE31E9018FF1E3F00405754 /* Cocoa.framework */; };
 		AAE31E9B18FF1E3F00405754 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAE31E9918FF1E3F00405754 /* InfoPlist.strings */; };
 		AAE31EA618FF1E3F00405754 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE31EA518FF1E3F00405754 /* XCTest.framework */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA38C1661981A7E2003CDA68 /* NSNumber+extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+extra.h"; sourceTree = "<group>"; };
+		AA38C1671981A7E2003CDA68 /* NSNumber+extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+extra.m"; sourceTree = "<group>"; };
 		AAE31E8D18FF1E3F00405754 /* FoundationCategoriesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FoundationCategoriesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE31E9018FF1E3F00405754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AAE31E9318FF1E3F00405754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -182,6 +186,8 @@
 				AAE31EC518FF1E7100405754 /* NSObject+extra.m */,
 				AAE31EC618FF1E7100405754 /* NSString+extra.h */,
 				AAE31EC718FF1E7100405754 /* NSString+extra.m */,
+				AA38C1661981A7E2003CDA68 /* NSNumber+extra.h */,
+				AA38C1671981A7E2003CDA68 /* NSNumber+extra.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -199,6 +205,7 @@
 				AAE31ECC18FF1E7100405754 /* NSFileManager+DirectoryLocations.h in Headers */,
 				AAE31ED018FF1E7100405754 /* NSObject+extra.h in Headers */,
 				AAE31ECA18FF1E7100405754 /* NSDictionary+json.h in Headers */,
+				AA38C1681981A7E2003CDA68 /* NSNumber+extra.h in Headers */,
 				AAE31EDD18FF1F9A00405754 /* FoundationCategoriesKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +309,7 @@
 				AAE31ED118FF1E7100405754 /* NSObject+extra.m in Sources */,
 				AAE31ECB18FF1E7100405754 /* NSDictionary+json.m in Sources */,
 				AAE31ECF18FF1E7100405754 /* NSMutableAttributedString+extra.m in Sources */,
+				AA38C1691981A7E2003CDA68 /* NSNumber+extra.m in Sources */,
 				AAE31ED318FF1E7100405754 /* NSString+extra.m in Sources */,
 				AAE31EC918FF1E7100405754 /* NSArray+extra.m in Sources */,
 			);

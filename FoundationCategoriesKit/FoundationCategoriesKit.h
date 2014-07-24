@@ -15,3 +15,4 @@
 #import "NSMutableAttributedString+extra.h"
 #import "NSObject+extra.h"
 #import "NSString+extra.h"
+#import "NSNumber+extra.h"
