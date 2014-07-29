@@ -1,4 +1,4 @@
 FoundationCategoriesKit
 =======================
 
-handy categories for FoundationKit classes
+Handy categories for FoundationKit classes.
