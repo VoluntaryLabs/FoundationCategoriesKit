@@ -94,6 +94,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA989F8E199ACE84001401E4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		AAE31E8318FF1E3F00405754 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +143,7 @@
 		AAE31E9618FF1E3F00405754 /* FoundationCategoriesKit */ = {
 			isa = PBXGroup;
 			children = (
+				AA989F8E199ACE84001401E4 /* Classes */,
 				AAE31EBB18FF1E7100405754 /* Categories */,
 				AAE31E9D18FF1E3F00405754 /* FoundationCategoriesKit.h */,
 				AAE31E9718FF1E3F00405754 /* Supporting Files */,
