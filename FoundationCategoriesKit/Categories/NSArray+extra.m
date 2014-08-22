@@ -7,6 +7,7 @@
 //
 
 #import "NSArray+extra.h"
+#import "NSObject+extra.h"
 
 @implementation NSArray (extra)
 
@@ -14,9 +15,12 @@
 {
     NSMutableArray *array = [NSMutableArray arrayWithCapacity:[self count]];
     NSEnumerator *enumerator = [self reverseObjectEnumerator];
-    for (id element in enumerator) {
+    
+    for (id element in enumerator)
+    {
         [array addObject:element];
     }
+    
     return array;
 }
 
@@ -76,7 +80,7 @@
     
     for (NSObject *obj in self)
     {
-        id result = [obj performSelector:aSelector];
+        id result = [obj idNoWarningPerformSelector:aSelector];
         [results addObject:result];
     }
     
