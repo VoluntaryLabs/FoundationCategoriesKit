@@ -8,6 +8,7 @@
 
 #import "NSArray+extra.h"
 #import "NSMutableArray+extra.h"
+#import "NSObject+extra.h"
 
 @implementation NSArray (extra)
 
@@ -80,7 +81,7 @@
     
     for (NSObject *obj in self)
     {
-        id result = [obj performSelector:aSelector];
+        id result = [obj idNoWarningPerformSelector:aSelector];
         [results addObject:result];
     }
     
