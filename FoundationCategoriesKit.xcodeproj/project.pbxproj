@@ -273,6 +273,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = voluntary.net;
 				TargetAttributes = {
+					AAE31E8C18FF1E3F00405754 = {
+						DevelopmentTeam = 68AUPW6ZUW;
+					};
 					AAE31EA318FF1E3F00405754 = {
 						TestTargetID = AAE31E8C18FF1E3F00405754;
 					};
@@ -443,6 +446,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -452,6 +457,7 @@
 				INFOPLIST_FILE = "FoundationCategoriesKit/FoundationCategoriesKit-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -460,6 +466,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -469,6 +477,7 @@
 				INFOPLIST_FILE = "FoundationCategoriesKit/FoundationCategoriesKit-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
