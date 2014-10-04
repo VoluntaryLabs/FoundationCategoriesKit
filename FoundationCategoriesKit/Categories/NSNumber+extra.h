@@ -13,4 +13,6 @@
 - (NSString *)asFormattedString;
 - (NSString *)asFormattedStringWithFractionalDigits:(NSUInteger)sigDigitCount;
 
+- (NSNumber *)asNumber;
+
 @end

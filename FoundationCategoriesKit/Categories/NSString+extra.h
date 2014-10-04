@@ -43,4 +43,6 @@
 
 - (NSString *)capitalisedFirstCharacterString;
 
+- (NSNumber *)asNumber;
+
 @end
