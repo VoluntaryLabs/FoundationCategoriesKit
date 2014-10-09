@@ -32,4 +32,9 @@
     return [formatter stringFromNumber:self];
 }
 
+- (NSNumber *)asNumber
+{
+    return self;
+}
+
 @end

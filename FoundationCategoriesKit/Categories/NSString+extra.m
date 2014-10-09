@@ -257,6 +257,12 @@
     return self;
 }
 
+- (NSNumber *)asNumber
+{
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    [f setNumberStyle:NSNumberFormatterDecimalStyle];
+    return [f numberFromString:self];
+}
 
 @end
 
