@@ -10,6 +10,9 @@
 
 @interface NSNumber (extra)
 
++ (NSNumber *)entropyNumber;
+
+- (NSString *)asString;
 - (NSString *)asFormattedString;
 - (NSString *)asFormattedStringWithFractionalDigits:(NSUInteger)sigDigitCount;
 

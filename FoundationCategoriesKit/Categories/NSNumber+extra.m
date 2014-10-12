@@ -10,6 +10,19 @@
 
 @implementation NSNumber (extra)
 
++ (NSNumber *)entropyNumber
+{
+    unsigned int entropy = (unsigned int)time(NULL) + (unsigned int)clock();
+    srandom(entropy);
+    
+    return [NSNumber numberWithLong:random()];
+}
+
+- (NSString *)asString
+{
+    return self.asFormattedString;
+}
+
 - (NSString *)asFormattedString
 {
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
