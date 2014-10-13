@@ -13,6 +13,8 @@
 + (NSNumber *)entropyNumber;
 
 - (NSString *)asString;
+- (NSString *)asUnsignedIntegerString;
+
 - (NSString *)asFormattedString;
 - (NSString *)asFormattedStringWithFractionalDigits:(NSUInteger)sigDigitCount;
 

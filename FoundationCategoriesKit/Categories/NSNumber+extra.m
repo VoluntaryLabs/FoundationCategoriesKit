@@ -18,6 +18,11 @@
     return [NSNumber numberWithLong:random()];
 }
 
+- (NSString *)asUnsignedIntegerString
+{
+    return [NSString stringWithFormat:@"%ul", self.unsignedIntValue];
+}
+
 - (NSString *)asString
 {
     return self.asFormattedString;

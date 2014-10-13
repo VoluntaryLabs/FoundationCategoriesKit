@@ -70,6 +70,23 @@
 
 - (id)removeFirstObject
 {
+    return [self popFirst];
+}
+
+- (id)popLast
+{
+    if (self.count > 0)
+    {
+        id lastObject = self.lastObject;
+        [self removeLastObject];
+        return lastObject;
+    }
+    
+    return nil;
+}
+
+- (id)popFirst
+{
     if (self.count > 0)
     {
         id firstObject = self.firstObject;

@@ -14,5 +14,7 @@
 - (void)mergeWith:(NSArray *)otherArray;
 - (id)removeFirstObject;
 
+- (id)popLast;
+- (id)popFirst;
 
 @end
