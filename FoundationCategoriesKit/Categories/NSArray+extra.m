@@ -95,6 +95,68 @@
     return [NSArray arrayWithArray:results];
 }
 
+// bool checks
+
+// helpers
+//NSMethodSignature *sig = [self.class instanceMethodSignatureForSelector:@selector(containsObject:)];
+
+- (BOOL)allTrueForSelector:(SEL)aSelector
+{
+    return [self firstFalseForSelector:aSelector] == nil;
+
+}
+
+- (BOOL)allFalseForSelector:(SEL)aSelector
+{
+    return [self firstTrueForSelector:aSelector] == nil;
+}
+
+- (id)firstTrueForSelector:(SEL)aSelector
+{
+    for (id item in self)
+    {
+        if ([item respondsToSelector:aSelector])
+        {
+            
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+            
+            if ([item performSelector:aSelector])
+            {
+                return item;
+            }
+            
+#pragma clang diagnostic pop
+            
+        }
+    }
+    
+    return nil;
+}
+
+- (id)firstFalseForSelector:(SEL)aSelector
+{
+    for (id item in self)
+    {
+        if ([item respondsToSelector:aSelector])
+        {
+            
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+            
+            if (![item performSelector:aSelector])
+            {
+                return item;
+            }
+            
+#pragma clang diagnostic pop
+            
+        }
+    }
+    
+    return nil;
+}
+
 @end
 
 

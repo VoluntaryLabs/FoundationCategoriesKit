@@ -22,5 +22,13 @@
 
 - (NSArray *)sansFirstObject;
 
+// tests
+
+- (BOOL)allTrueForSelector:(SEL)aSelector;
+- (BOOL)allFalseForSelector:(SEL)aSelector;
+
+- (id)firstTrueForSelector:(SEL)aSelector;
+- (id)firstFalseForSelector:(SEL)aSelector;
+
 @end
 
