@@ -213,6 +213,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE31EDD18FF1F9A00405754 /* FoundationCategoriesKit.h in Headers */,
 				AAE31ECE18FF1E7100405754 /* NSMutableAttributedString+extra.h in Headers */,
 				AAE31ED218FF1E7100405754 /* NSString+extra.h in Headers */,
 				AAE31EC818FF1E7100405754 /* NSArray+extra.h in Headers */,
@@ -221,7 +222,6 @@
 				AAE31ECA18FF1E7100405754 /* NSDictionary+json.h in Headers */,
 				AA38C1681981A7E2003CDA68 /* NSNumber+extra.h in Headers */,
 				AA27EF4219A80D10000E0339 /* NSMutableArray+extra.h in Headers */,
-				AAE31EDD18FF1F9A00405754 /* FoundationCategoriesKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
