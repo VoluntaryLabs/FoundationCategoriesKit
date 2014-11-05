@@ -30,5 +30,7 @@
 - (id)firstTrueForSelector:(SEL)aSelector;
 - (id)firstFalseForSelector:(SEL)aSelector;
 
+- (BOOL)beginsWithArray:(NSArray *)anArray;
+
 @end
 

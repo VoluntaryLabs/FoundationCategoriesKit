@@ -157,6 +157,12 @@
     return nil;
 }
 
+- (BOOL)beginsWithArray:(NSArray *)anArray
+{
+    NSArray *sub = [self subarrayWithRange:NSMakeRange(0, anArray.count)];
+    return [sub isEqualToArray:anArray];
+}
+
 @end
 
 
