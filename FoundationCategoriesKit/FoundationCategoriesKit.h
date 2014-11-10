@@ -17,3 +17,4 @@
 #import "NSObject+extra.h"
 #import "NSString+extra.h"
 #import "NSNumber+extra.h"
+#import "NSProcessInfo+extra.h"
