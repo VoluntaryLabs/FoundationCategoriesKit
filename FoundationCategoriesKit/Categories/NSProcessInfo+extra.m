@@ -11,40 +11,40 @@
 
 @implementation NSProcessInfo (extra)
 
+static NSNumber *versionNumber = nil;
+
 - (NSNumber *)majorMinorOSXVersionNumber
 {
-    /*
-     NSOperatingSystemVersion version;
-     
-     version.majorVersion = 10;
-     version.minorVersion = 10;
-     */
-    
-    if ([[NSProcessInfo processInfo] respondsToSelector:@selector(operatingSystemVersionString)])
+    if (!versionNumber)
     {
-        NSString *version = [[NSProcessInfo processInfo] operatingSystemVersionString];
-        
-        // example: 'Version 10.10 (Build 14A389)'
-        
-        version = [[version after:@"Version "] before:@" "];
-        NSLog(@"version = '%@'", version);
-        
-        NSArray *parts = [version componentsSeparatedByString:@"."];
-        //NSInteger majorVersion = ((NSString *)[parts objectAtIndex:0]).intValue;
-        //NSInteger minorVersion = ((NSString *)[parts objectAtIndex:1]).intValue;
-        
-        NSString *majorMinor = [NSString stringWithFormat:@"%@.%@",
-                                [parts objectAtIndex:0],
-                                [parts objectAtIndex:1]
-                                ];
-        
-        NSNumber *versionNumber = [NSNumber numberWithFloat:majorMinor.floatValue];
-        NSLog(@"versionNumber = %@", versionNumber);
-        
-        return versionNumber;
+        if ([[NSProcessInfo processInfo] respondsToSelector:@selector(operatingSystemVersionString)])
+        {
+            NSString *version = [[NSProcessInfo processInfo] operatingSystemVersionString];
+            
+            // example: 'Version 10.10 (Build 14A389)'
+            
+            version = [[version after:@"Version "] before:@" "];
+            //NSLog(@"version = '%@'", version);
+            
+            NSArray *parts = [version componentsSeparatedByString:@"."];
+            //NSInteger majorVersion = ((NSString *)[parts objectAtIndex:0]).intValue;
+            //NSInteger minorVersion = ((NSString *)[parts objectAtIndex:1]).intValue;
+            
+            NSString *majorMinor = [NSString stringWithFormat:@"%@.%@",
+                                    [parts objectAtIndex:0],
+                                    [parts objectAtIndex:1]
+                                    ];
+            
+            versionNumber = [NSNumber numberWithFloat:majorMinor.floatValue];
+            //NSLog(@"versionNumber = %@", versionNumber);
+        }
+        else
+        {
+            versionNumber = [NSNumber numberWithFloat:10.0];
+        }
     }
     
-    return NO;
+    return versionNumber;
 }
 
 @end
