@@ -159,6 +159,11 @@
 
 - (BOOL)beginsWithArray:(NSArray *)anArray
 {
+    if (self.count < anArray.count)
+    {
+        return NO;
+    }
+    
     NSArray *sub = [self subarrayWithRange:NSMakeRange(0, anArray.count)];
     return [sub isEqualToArray:anArray];
 }
