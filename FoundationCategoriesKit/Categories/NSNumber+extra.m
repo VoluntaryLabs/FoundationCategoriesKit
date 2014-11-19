@@ -37,13 +37,13 @@
     return [formatter stringFromNumber:self];
 }
 
-- (NSString *)asFormattedStringWithFractionalDigits:(NSUInteger)sigDigitCount
+- (NSString *)asFormattedStringWithFractionalDigits:(NSUInteger)fracDigits
 {
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
     
-    [formatter setUsesSignificantDigits:YES];
-    [formatter setMinimumFractionDigits:sigDigitCount];
-    //[formatter setMinimumFractionDigits:sigDigitCount];
+    //[formatter setUsesSignificantDigits:YES];
+    [formatter setMinimumFractionDigits:fracDigits];
+    [formatter setMaximumFractionDigits:fracDigits];
     
     [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
     [formatter setPartialStringValidationEnabled:YES];

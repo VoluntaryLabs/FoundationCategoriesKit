@@ -18,4 +18,6 @@
 - (NSString *)itemDateString;
 - (NSString *)itemDateTimeString;
 
++ (void)waitFor:(NSTimeInterval)dt;
+
 @end

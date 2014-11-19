@@ -7,6 +7,8 @@
 //
 
 #import "NSDate+extra.h"
+#include <unistd.h>
+
 
 @implementation NSDate (extra)
 
@@ -180,6 +182,13 @@
     
     return @"";
 }
+
++ (void)waitFor:(NSTimeInterval)dt
+{
+    useconds_t usec = dt*1000000;
+    usleep(usec);
+}
+
 
 
 @end
