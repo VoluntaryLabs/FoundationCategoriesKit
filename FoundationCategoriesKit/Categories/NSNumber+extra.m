@@ -55,4 +55,33 @@
     return self;
 }
 
+// --- math ---
+
+- (BOOL)hasFraction
+{
+    //double d = aNumber.doubleValue;
+    
+    return self.doubleValue != (double)self.longLongValue;
+}
+
+- (NSNumber *)multipliedBy:(NSNumber *)aNumber
+{
+    if (self.hasFraction || aNumber.hasFraction)
+    {
+        return [NSNumber numberWithDouble:[self doubleValue] * [aNumber doubleValue]];
+    }
+
+    return [NSNumber numberWithLongLong:[self longLongValue] * [aNumber longLongValue]];
+}
+
+- (NSNumber *)addedTo:(NSNumber *)aNumber
+{
+    if (self.hasFraction || aNumber.hasFraction)
+    {
+        return [NSNumber numberWithDouble:[self doubleValue] + [aNumber doubleValue]];
+    }
+    
+    return [NSNumber numberWithLongLong:[self longLongValue] + [aNumber longLongValue]];
+}
+
 @end

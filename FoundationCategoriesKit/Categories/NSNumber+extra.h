@@ -20,4 +20,7 @@
 
 - (NSNumber *)asNumber;
 
+- (NSNumber *)multipliedBy:(NSNumber *)aNumber;
+- (NSNumber *)addedTo:(NSNumber *)aNumber;
+
 @end
