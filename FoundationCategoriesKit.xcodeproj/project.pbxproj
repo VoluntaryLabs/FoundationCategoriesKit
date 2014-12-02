@@ -13,6 +13,8 @@
 		AA32DFC31A117D5D00BF2177 /* NSProcessInfo+extra.m in Sources */ = {isa = PBXBuildFile; fileRef = AA32DFC11A117D5D00BF2177 /* NSProcessInfo+extra.m */; };
 		AA38C1681981A7E2003CDA68 /* NSNumber+extra.h in Headers */ = {isa = PBXBuildFile; fileRef = AA38C1661981A7E2003CDA68 /* NSNumber+extra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA38C1691981A7E2003CDA68 /* NSNumber+extra.m in Sources */ = {isa = PBXBuildFile; fileRef = AA38C1671981A7E2003CDA68 /* NSNumber+extra.m */; };
+		AA7F67C51A2D396D00F9BBE8 /* NSMutableDictionary+extra.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7F67C31A2D396D00F9BBE8 /* NSMutableDictionary+extra.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA7F67C61A2D396D00F9BBE8 /* NSMutableDictionary+extra.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7F67C41A2D396D00F9BBE8 /* NSMutableDictionary+extra.m */; };
 		AA8C87831A140CDA00ADFBFB /* NSDate+extra.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8C87811A140CDA00ADFBFB /* NSDate+extra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA8C87841A140CDA00ADFBFB /* NSDate+extra.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8C87821A140CDA00ADFBFB /* NSDate+extra.m */; };
 		AAE31E9118FF1E3F00405754 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE31E9018FF1E3F00405754 /* Cocoa.framework */; };
@@ -54,6 +56,8 @@
 		AA32DFC11A117D5D00BF2177 /* NSProcessInfo+extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSProcessInfo+extra.m"; sourceTree = "<group>"; };
 		AA38C1661981A7E2003CDA68 /* NSNumber+extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+extra.h"; sourceTree = "<group>"; };
 		AA38C1671981A7E2003CDA68 /* NSNumber+extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+extra.m"; sourceTree = "<group>"; };
+		AA7F67C31A2D396D00F9BBE8 /* NSMutableDictionary+extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+extra.h"; sourceTree = "<group>"; };
+		AA7F67C41A2D396D00F9BBE8 /* NSMutableDictionary+extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+extra.m"; sourceTree = "<group>"; };
 		AA8C87811A140CDA00ADFBFB /* NSDate+extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+extra.h"; sourceTree = "<group>"; };
 		AA8C87821A140CDA00ADFBFB /* NSDate+extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+extra.m"; sourceTree = "<group>"; };
 		AAE31E8D18FF1E3F00405754 /* FoundationCategoriesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FoundationCategoriesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,6 +218,8 @@
 				AA32DFC11A117D5D00BF2177 /* NSProcessInfo+extra.m */,
 				AA8C87811A140CDA00ADFBFB /* NSDate+extra.h */,
 				AA8C87821A140CDA00ADFBFB /* NSDate+extra.m */,
+				AA7F67C31A2D396D00F9BBE8 /* NSMutableDictionary+extra.h */,
+				AA7F67C41A2D396D00F9BBE8 /* NSMutableDictionary+extra.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 				AAE31ECA18FF1E7100405754 /* NSDictionary+json.h in Headers */,
 				AA38C1681981A7E2003CDA68 /* NSNumber+extra.h in Headers */,
 				AA32DFC21A117D5D00BF2177 /* NSProcessInfo+extra.h in Headers */,
+				AA7F67C51A2D396D00F9BBE8 /* NSMutableDictionary+extra.h in Headers */,
 				AA8C87831A140CDA00ADFBFB /* NSDate+extra.h in Headers */,
 				AA27EF4219A80D10000E0339 /* NSMutableArray+extra.h in Headers */,
 			);
@@ -347,6 +354,7 @@
 				AAE31ED318FF1E7100405754 /* NSString+extra.m in Sources */,
 				AAE31EC918FF1E7100405754 /* NSArray+extra.m in Sources */,
 				AA8C87841A140CDA00ADFBFB /* NSDate+extra.m in Sources */,
+				AA7F67C61A2D396D00F9BBE8 /* NSMutableDictionary+extra.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

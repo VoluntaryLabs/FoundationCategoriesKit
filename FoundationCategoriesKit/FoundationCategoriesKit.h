@@ -13,10 +13,17 @@
 #import "NSMutableArray+extra.h"
 
 #import "NSDate+extra.h"
+
 #import "NSDictionary+json.h"
+#import "NSMutableDictionary+extra.h"
+
 #import "NSFileManager+DirectoryLocations.h"
+
 #import "NSMutableAttributedString+extra.h"
+
 #import "NSObject+extra.h"
+
 #import "NSString+extra.h"
 #import "NSNumber+extra.h"
+
 #import "NSProcessInfo+extra.h"
