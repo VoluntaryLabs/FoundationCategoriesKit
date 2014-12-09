@@ -45,4 +45,6 @@
 
 - (NSNumber *)asNumber;
 
+- (NSComparisonResult)versionCompare:(NSString*)versionTwo;
+
 @end

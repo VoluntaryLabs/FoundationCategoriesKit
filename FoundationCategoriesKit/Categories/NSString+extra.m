@@ -264,5 +264,33 @@
     return [f numberFromString:self];
 }
 
+- (NSComparisonResult)versionCompare:(NSString*)versionTwo
+{
+    NSString *versionOne = self;
+    NSArray *versionOneComp = [versionOne componentsSeparatedByString:@"."];
+    NSArray *versionTwoComp = [versionTwo componentsSeparatedByString:@"."];
+    
+    NSInteger pos = 0;
+    
+    while ([versionOneComp count] > pos || [versionTwoComp count] > pos)
+    {
+        NSInteger v1 = [versionOneComp count] > pos ? [[versionOneComp objectAtIndex:pos] integerValue] : 0;
+        NSInteger v2 = [versionTwoComp count] > pos ? [[versionTwoComp objectAtIndex:pos] integerValue] : 0;
+        
+        if (v1 < v2)
+        {
+            return NSOrderedAscending;
+        }
+        else if (v1 > v2)
+        {
+            return NSOrderedDescending;
+        }
+        
+        pos++;
+    }
+    
+    return NSOrderedSame;
+}
+
 @end
 
