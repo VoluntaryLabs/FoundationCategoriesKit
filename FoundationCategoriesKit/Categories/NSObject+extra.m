@@ -7,6 +7,7 @@
 //
 
 #import "NSObject+extra.h"
+#import "NSString+extra.h"
 
 @implementation NSObject (extra)
 
@@ -61,6 +62,9 @@
     #pragma clang diagnostic pop
 }
 
+/*
+// these seem to hose memory - why?
+ 
 - (void)voidPerformSelector:(SEL)aSelector
 {
     NSMethodSignature *sig = [self methodSignatureForSelector:aSelector];
@@ -137,6 +141,13 @@
     NSInteger result = 0;
     [inv getReturnValue:&result];
     return result;
+}
+*/
+
+- (void)callSetter:(NSString *)propertyName withValue:(id)aValue
+{
+    SEL aSelector = NSSelectorFromString(propertyName.asSetterString);
+    [self noWarningPerformSelector:aSelector withObject:aValue];
 }
 
 @end

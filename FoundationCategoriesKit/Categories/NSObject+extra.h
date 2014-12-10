@@ -27,4 +27,6 @@
 - (NSInteger)nsintegerPerformSelector:(SEL)aSelector;
  */
 
+- (void)callSetter:(NSString *)propertyName withValue:(id)aValue;
+
 @end

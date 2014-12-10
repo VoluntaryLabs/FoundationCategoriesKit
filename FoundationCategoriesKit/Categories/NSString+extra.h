@@ -42,6 +42,7 @@
 - (NSString *)withPrefix:(NSString *)aString;
 
 - (NSString *)capitalisedFirstCharacterString;
+- (NSString *)asSetterString;
 
 - (NSNumber *)asNumber;
 

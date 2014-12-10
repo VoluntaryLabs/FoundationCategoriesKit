@@ -292,5 +292,11 @@
     return NSOrderedSame;
 }
 
+- (NSString *)asSetterString
+{
+    NSString *setterName = [NSString stringWithFormat:@"set%@:", self.capitalisedFirstCharacterString];
+    return setterName;
+}
+
 @end
 
