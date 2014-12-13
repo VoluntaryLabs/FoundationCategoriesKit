@@ -17,10 +17,11 @@
 - (void)noWarningPerformSelector:(SEL)aSelector;
 - (void)noWarningPerformSelector:(SEL)aSelector withObject:anArgument;
 
-- (BOOL)boolPerformSelector:(SEL)aSelector;
-
 // perform
 /*
+
+- (BOOL)boolPerformSelector:(SEL)aSelector;
+
 - (void)voidPerformSelector:(SEL)aSelector;
 - (void)voidPerformSelector:(SEL)aSelector withObject:(id)aValue;
 - (id)idPerformSelector:(SEL)aSelector;
