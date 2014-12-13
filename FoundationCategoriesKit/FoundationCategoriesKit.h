@@ -27,3 +27,4 @@
 #import "NSNumber+extra.h"
 
 #import "NSProcessInfo+extra.h"
+#import "NSBundle+extras.h"

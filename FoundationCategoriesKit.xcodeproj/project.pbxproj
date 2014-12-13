@@ -17,6 +17,8 @@
 		AA7F67C61A2D396D00F9BBE8 /* NSMutableDictionary+extra.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7F67C41A2D396D00F9BBE8 /* NSMutableDictionary+extra.m */; };
 		AA8C87831A140CDA00ADFBFB /* NSDate+extra.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8C87811A140CDA00ADFBFB /* NSDate+extra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA8C87841A140CDA00ADFBFB /* NSDate+extra.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8C87821A140CDA00ADFBFB /* NSDate+extra.m */; };
+		AABEB7791A3C1D04005502A4 /* NSBundle+extras.h in Headers */ = {isa = PBXBuildFile; fileRef = AABEB7771A3C1D04005502A4 /* NSBundle+extras.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AABEB77A1A3C1D04005502A4 /* NSBundle+extras.m in Sources */ = {isa = PBXBuildFile; fileRef = AABEB7781A3C1D04005502A4 /* NSBundle+extras.m */; };
 		AAE31E9118FF1E3F00405754 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE31E9018FF1E3F00405754 /* Cocoa.framework */; };
 		AAE31E9B18FF1E3F00405754 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAE31E9918FF1E3F00405754 /* InfoPlist.strings */; };
 		AAE31EA618FF1E3F00405754 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE31EA518FF1E3F00405754 /* XCTest.framework */; };
@@ -60,6 +62,8 @@
 		AA7F67C41A2D396D00F9BBE8 /* NSMutableDictionary+extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+extra.m"; sourceTree = "<group>"; };
 		AA8C87811A140CDA00ADFBFB /* NSDate+extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+extra.h"; sourceTree = "<group>"; };
 		AA8C87821A140CDA00ADFBFB /* NSDate+extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+extra.m"; sourceTree = "<group>"; };
+		AABEB7771A3C1D04005502A4 /* NSBundle+extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+extras.h"; sourceTree = "<group>"; };
+		AABEB7781A3C1D04005502A4 /* NSBundle+extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+extras.m"; sourceTree = "<group>"; };
 		AAE31E8D18FF1E3F00405754 /* FoundationCategoriesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FoundationCategoriesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE31E9018FF1E3F00405754 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AAE31E9318FF1E3F00405754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -220,6 +224,8 @@
 				AA8C87821A140CDA00ADFBFB /* NSDate+extra.m */,
 				AA7F67C31A2D396D00F9BBE8 /* NSMutableDictionary+extra.h */,
 				AA7F67C41A2D396D00F9BBE8 /* NSMutableDictionary+extra.m */,
+				AABEB7771A3C1D04005502A4 /* NSBundle+extras.h */,
+				AABEB7781A3C1D04005502A4 /* NSBundle+extras.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -241,6 +247,7 @@
 				AA38C1681981A7E2003CDA68 /* NSNumber+extra.h in Headers */,
 				AA32DFC21A117D5D00BF2177 /* NSProcessInfo+extra.h in Headers */,
 				AA7F67C51A2D396D00F9BBE8 /* NSMutableDictionary+extra.h in Headers */,
+				AABEB7791A3C1D04005502A4 /* NSBundle+extras.h in Headers */,
 				AA8C87831A140CDA00ADFBFB /* NSDate+extra.h in Headers */,
 				AA27EF4219A80D10000E0339 /* NSMutableArray+extra.h in Headers */,
 			);
@@ -349,6 +356,7 @@
 				AA27EF4319A80D10000E0339 /* NSMutableArray+extra.m in Sources */,
 				AAE31ECB18FF1E7100405754 /* NSDictionary+json.m in Sources */,
 				AA32DFC31A117D5D00BF2177 /* NSProcessInfo+extra.m in Sources */,
+				AABEB77A1A3C1D04005502A4 /* NSBundle+extras.m in Sources */,
 				AAE31ECF18FF1E7100405754 /* NSMutableAttributedString+extra.m in Sources */,
 				AA38C1691981A7E2003CDA68 /* NSNumber+extra.m in Sources */,
 				AAE31ED318FF1E7100405754 /* NSString+extra.m in Sources */,
