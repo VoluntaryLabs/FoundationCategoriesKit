@@ -48,4 +48,7 @@
 
 - (NSComparisonResult)versionCompare:(NSString*)versionTwo;
 
+- (NSString *)stringAbbreviatedToIndex:(NSUInteger)index;
+
+
 @end
