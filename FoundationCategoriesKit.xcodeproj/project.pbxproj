@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AA27EF4219A80D10000E0339 /* NSMutableArray+extra.h in Headers */ = {isa = PBXBuildFile; fileRef = AA27EF4019A80D10000E0339 /* NSMutableArray+extra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA27EF4319A80D10000E0339 /* NSMutableArray+extra.m in Sources */ = {isa = PBXBuildFile; fileRef = AA27EF4119A80D10000E0339 /* NSMutableArray+extra.m */; };
+		AA32A3551A3FB1BB009CDC31 /* NSException+extras.h in Headers */ = {isa = PBXBuildFile; fileRef = AA32A3531A3FB1BB009CDC31 /* NSException+extras.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA32A3561A3FB1BB009CDC31 /* NSException+extras.m in Sources */ = {isa = PBXBuildFile; fileRef = AA32A3541A3FB1BB009CDC31 /* NSException+extras.m */; };
 		AA32DFC21A117D5D00BF2177 /* NSProcessInfo+extra.h in Headers */ = {isa = PBXBuildFile; fileRef = AA32DFC01A117D5D00BF2177 /* NSProcessInfo+extra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA32DFC31A117D5D00BF2177 /* NSProcessInfo+extra.m in Sources */ = {isa = PBXBuildFile; fileRef = AA32DFC11A117D5D00BF2177 /* NSProcessInfo+extra.m */; };
 		AA38C1681981A7E2003CDA68 /* NSNumber+extra.h in Headers */ = {isa = PBXBuildFile; fileRef = AA38C1661981A7E2003CDA68 /* NSNumber+extra.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,6 +56,8 @@
 /* Begin PBXFileReference section */
 		AA27EF4019A80D10000E0339 /* NSMutableArray+extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+extra.h"; sourceTree = "<group>"; };
 		AA27EF4119A80D10000E0339 /* NSMutableArray+extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+extra.m"; sourceTree = "<group>"; };
+		AA32A3531A3FB1BB009CDC31 /* NSException+extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSException+extras.h"; sourceTree = "<group>"; };
+		AA32A3541A3FB1BB009CDC31 /* NSException+extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSException+extras.m"; sourceTree = "<group>"; };
 		AA32DFC01A117D5D00BF2177 /* NSProcessInfo+extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSProcessInfo+extra.h"; sourceTree = "<group>"; };
 		AA32DFC11A117D5D00BF2177 /* NSProcessInfo+extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSProcessInfo+extra.m"; sourceTree = "<group>"; };
 		AA38C1661981A7E2003CDA68 /* NSNumber+extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+extra.h"; sourceTree = "<group>"; };
@@ -226,6 +230,8 @@
 				AA7F67C41A2D396D00F9BBE8 /* NSMutableDictionary+extra.m */,
 				AABEB7771A3C1D04005502A4 /* NSBundle+extras.h */,
 				AABEB7781A3C1D04005502A4 /* NSBundle+extras.m */,
+				AA32A3531A3FB1BB009CDC31 /* NSException+extras.h */,
+				AA32A3541A3FB1BB009CDC31 /* NSException+extras.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -248,6 +254,7 @@
 				AA32DFC21A117D5D00BF2177 /* NSProcessInfo+extra.h in Headers */,
 				AA7F67C51A2D396D00F9BBE8 /* NSMutableDictionary+extra.h in Headers */,
 				AABEB7791A3C1D04005502A4 /* NSBundle+extras.h in Headers */,
+				AA32A3551A3FB1BB009CDC31 /* NSException+extras.h in Headers */,
 				AA8C87831A140CDA00ADFBFB /* NSDate+extra.h in Headers */,
 				AA27EF4219A80D10000E0339 /* NSMutableArray+extra.h in Headers */,
 			);
@@ -351,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA32A3561A3FB1BB009CDC31 /* NSException+extras.m in Sources */,
 				AAE31ECD18FF1E7100405754 /* NSFileManager+DirectoryLocations.m in Sources */,
 				AAE31ED118FF1E7100405754 /* NSObject+extra.m in Sources */,
 				AA27EF4319A80D10000E0339 /* NSMutableArray+extra.m in Sources */,

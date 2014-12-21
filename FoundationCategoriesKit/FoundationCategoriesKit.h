@@ -17,6 +17,8 @@
 #import "NSDictionary+json.h"
 #import "NSMutableDictionary+extra.h"
 
+#import "NSException+extras.h"
+
 #import "NSFileManager+DirectoryLocations.h"
 
 #import "NSMutableAttributedString+extra.h"
