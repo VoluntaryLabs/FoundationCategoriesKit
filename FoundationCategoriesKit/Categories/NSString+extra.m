@@ -298,5 +298,15 @@
     return setterName;
 }
 
+- (NSString *)stringAbbreviatedToIndex:(NSUInteger)index
+{
+    if (index >= self.length)
+    {
+        return [NSString stringWithString:self];
+    }
+    
+    return [[self substringToIndex:index] stringByAppendingString:@"..."];
+}
+
 @end
 
