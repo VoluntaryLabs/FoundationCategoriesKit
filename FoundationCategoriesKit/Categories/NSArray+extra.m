@@ -88,6 +88,23 @@
     return [NSArray arrayWithArray:results];
 }
 
+- (NSArray *)select:(SEL)aSelector
+{
+    NSMutableArray *results = [NSMutableArray array];
+    
+    for (NSObject *obj in self)
+    {
+        BOOL result = (BOOL)[obj idNoWarningPerformSelector:aSelector];
+        
+        if (result)
+        {
+            [results addObject:obj];
+        }
+    }
+    
+    return [NSArray arrayWithArray:results];
+}
+
 - (NSArray *)sansFirstObject
 {
     NSMutableArray *results = [NSMutableArray arrayWithArray:self];

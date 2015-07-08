@@ -19,6 +19,7 @@
 - (id)objectBefore:(id)anObject;
 
 - (NSArray *)map:(SEL)aSelector;
+- (NSArray *)select:(SEL)aSelector;
 
 - (NSArray *)sansFirstObject;
 
