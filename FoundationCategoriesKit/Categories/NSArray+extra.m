@@ -107,9 +107,21 @@
 
 - (NSArray *)sansFirstObject
 {
-    NSMutableArray *results = [NSMutableArray arrayWithArray:self];
+    /*
+    // leaving this comment in as a warning -
+    // what's the deal with this producing retain issues??
+     
+    NSMutableArray *results = [NSMutableArray arrayWithArray:[self copy]];
     [results removeFirstObject];
     return [NSArray arrayWithArray:results];
+    */
+    
+    if ([self count] > 1)
+    {
+        return [self subarrayWithRange:NSMakeRange(1, [self count]-1)];
+    }
+    
+    return [NSArray array];
 }
 
 // bool checks
