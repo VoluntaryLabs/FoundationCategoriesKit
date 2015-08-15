@@ -30,4 +30,7 @@
 
 - (void)callSetter:(NSString *)propertyName withValue:(id)aValue;
 
+- (NSBundle *)bundle;
+- (NSString *)bundleDataPath;
+
 @end

@@ -8,6 +8,7 @@
 
 #import "NSObject+extra.h"
 #import "NSString+extra.h"
+#import "NSFileManager+DirectoryLocations.h"
 
 @implementation NSObject (extra)
 
@@ -148,6 +149,33 @@
 {
     SEL aSelector = NSSelectorFromString(propertyName.asSetterString);
     [self noWarningPerformSelector:aSelector withObject:aValue];
+}
+
+// --- bundle ---
+
+- (NSBundle *)bundle
+{
+    return [NSBundle bundleForClass:self.class];
+}
+
+- (NSString *)justBundleDataPath
+{
+    NSString *supportFolder = [[NSFileManager defaultManager] applicationSupportDirectory];
+    NSString *bundleName = [self.bundle.bundleIdentifier componentsSeparatedByString:@"."].lastObject;
+    NSString *path = [supportFolder stringByAppendingPathComponent:bundleName];
+    return path;
+}
+
+- (NSString *)bundleDataPath
+{
+    NSString *path = self.justBundleDataPath;
+    
+    NSError *error;
+    [[NSFileManager defaultManager] createDirectoryAtPath:path
+                              withIntermediateDirectories:YES
+                                               attributes:nil
+                                                    error:&error];
+    return path;
 }
 
 @end
